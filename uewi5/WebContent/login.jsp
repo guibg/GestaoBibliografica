@@ -1,21 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
+
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+
 <title>Login</title>
+
 </head>
 <body>
-	<form action="">
-		<img alt="Logo UCSal" href="https://www.ucsal.br/"
-			src="images/logo-nova-ucsal.png">
+	<form action="/LoginController" method="post">
+		<a href="https://www.ucsal.br/"> <img alt="Logo UCSal"
+			src="https://www.ucsal.br/images/logo-nova-ucsal.png">
+		</a>
 		<div align="center">
 			<br> <br> <br> <br> <br> <br> <br>
-			<br> <br> <br> <br> <br> <br> <br>
-			<br> <br> <br> <br> <br> <br> <br>
-			Login: <input type="text" name="usuario"> <br> Senha: <input
-				type="text" name="senha"> <br> <input type="submit">
+			<h1>Acessar</h1>
+			<div class="col-md-3 mb-3">
+				<label for="validationDefault05"></label> <input type="text"
+					class="form-control" name="usuario" placeholder="Login" required>
+			</div>
+			<div class="col-md-3 mb-3">
+				<label for="validationDefault05"></label> <input type="password"
+					class="form-control" placeholder="Senha" required>
+			</div>
+			<button type="submit" class="btn btn-success">Entrar</button>
 		</div>
 	</form>
 </body>
