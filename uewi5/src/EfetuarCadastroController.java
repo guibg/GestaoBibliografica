@@ -6,11 +6,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/CadastroController")
-public class CadastroController extends HttpServlet {
+@WebServlet("/EfetuarCadastroController")
+public class EfetuarCadastroController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public CadastroController() {
+	public EfetuarCadastroController() {
 		super();
 	}
 
@@ -21,12 +21,6 @@ public class CadastroController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		Usuario usuario = new Usuario();
-		if (!usuario.verificarUsuario(usuario)) {
-			usuario.inserirUsuario(usuario);
-		} else {
-			
-		}
 	}
 
 }
